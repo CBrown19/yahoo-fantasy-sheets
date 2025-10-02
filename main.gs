@@ -1,9 +1,9 @@
 const CONFIG = {
-  sheetId:          // ID of the Spreadsheet
-  CLIENT_ID:        // Yahoo client ID
-  CLIENT_SECRET:    // Yahoo client secret
-  teamCount:        // Number of teams in your league
-  leagueId:         // ID of you Yahoo league
+  sheetId: "XXXX",       // ID of the Spreadsheet
+  CLIENT_ID: 'XXXX',     // Yahoo client ID
+  CLIENT_SECRET: 'XXXX', // Yahoo client secret
+  teamCount: 10,         // Number of teams in your league
+  leagueId: 000000      // ID of you Yahoo league
 }
 
 let Logger = BetterLog.useSpreadsheet(CONFIG.sheetId);
