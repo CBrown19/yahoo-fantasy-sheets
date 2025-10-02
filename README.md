@@ -6,7 +6,7 @@ Fetches Yahoo Fantasy draft results and inserts them into your sheet while draft
 
 <h3>Step one</h3>
 
-Rename any existing sheets named "League Data", "Draft Results", "Player Data" and "Teams", since these will be cleared by the script.
+Rename any existing sheets named "League Data", "Draft Results", "Player Data" "Teams" and "Log", since these will be cleared/overwritten by the script.
 
 <h3>Step two</h3>
 
