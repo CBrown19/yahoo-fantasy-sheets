@@ -113,6 +113,17 @@ You can now run the `getDraftResults` function manually to get the latest pick p
      * During the draft, you should see names populating in the "Draft Results" sheet  
 
 
+<h1>Testing</h1>
 
-<h3>Credit</h3>
+Testing this out before you use it on a real draft is not a bad idea.
+
+Unfortunately, it's not possible to use this script with mock drafts on Yahoo. The best way to test for now is to create a dummy league and draft with it. Make sure you remember to change the `leagueID` in the config if you are doing this (see step 3)
+
+Some tips:
+ * When you create a league on yahoo, you can copy all the settings from one of your existing leagues, so this part is quick
+ * One yahoo account can manage multiple teams within a league. For example, i like to use my main account for the team i will draft, and a dummy account to manage all the other teams (minimum 3). All the dummy account's teams can auto-draft.
+ * After a draft, yahoo will let you reset the entire draft a maximum of 3 times, so you won't have unlimited tests on the same dummy league!
+
+
+<h1>Credit</h1>
 Big credit to @bekd70 and this project of his https://github.com/bekd70/Yahoo-Fantasy-Football-Data.
