@@ -24,9 +24,9 @@ You can add this to any projections spreadsheet you already have - BUT **Importa
 - This script also requires the OAuth2 and the ArrayLib library and optionally the BetterLog library.
   - To add the required libraries, follow these steps:
   - Go to the "Resources" menu and click on "Libraries". Add following libraries:
-    - OAuth2: 1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF, version: 38
-    - BetterLog: 1DSyxam1ceq72bMHsE6aOVeOl94X78WCwiYPytKi7chlg4x5GqiNXSw0l, version: 27
-    - ArrayLib: 1r9wNWbta3ebuYL4ENAdIp4UYKmyNiWf1AqsXYzfXduRHhTZEeTxS9MhZ, version: 23
+    - OAuth2: `1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF`, version: 38
+    - BetterLog: `1DSyxam1ceq72bMHsE6aOVeOl94X78WCwiYPytKi7chlg4x5GqiNXSw0l`, version: 27
+    - ArrayLib: `1r9wNWbta3ebuYL4ENAdIp4UYKmyNiWf1AqsXYzfXduRHhTZEeTxS9MhZ`, version: 23
    
  
 
@@ -58,10 +58,10 @@ At the top of the `main.gs` file, you will find several CONFIG variables that yo
 <h3>Step four - initialize the script</h3>
 
 - Go to the `main.gs` file in the script. Ensure the `initializeLeagueData` function is selected in the dropdown at the top, then click RUN
-- A google authorization window may pop up. You have to allow the app to access your google account. If you run into errors here, try doing in this chrome without adblockers running.
-- Navigate to your sheet and you will see a sidebar to the right. Click authorize. You will be redirected to a yahoo screen requesting authorization to your yahoo account. Once done, the sidebar in google sheets that hopefully returns "success"
-- Re-run the `initializeLeagueData` function from the `main.gs` file.
-- The script may take some time to run while data is copied into your sheet. Watch the log in Apps Script to see when it is complete.
+- A google authorization window may pop up. You have to allow the app to access your google account with all the requested permissions checked. It will say it's unsafe because google hasn't verified it, but proceed anyway (under 'advanced'). If you run into errors here, try doing this in Chrome without adblockers running.
+- Navigate to your sheet and you will see a sidebar to the right. Click authorize. You will be redirected to a yahoo screen requesting authorization to your yahoo account. Once done, the sidebar in google sheets that hopefully returns "success". If this fails, double check you put the correct Redirect URI in Yahoo in step 3.
+- The script will have failed in the meantime, so now you just need to re-run the `initializeLeagueData` function from the `main.gs` file.
+- This time it should work. It may take some time to run while data is copied into your sheet, especially the player data step. Watch the log in Apps Script to see when it is complete.
 - You should now see some new sheets created in your spreadsheet (as listed in Step 1)
 
 
